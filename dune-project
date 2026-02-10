@@ -5,7 +5,7 @@
 (generate_opam_files true)
 
 (source
- (github egriff89/ocaml-coreutils))
+ (github egriff89/coreutils.ml))
 
 (authors "Eric Griffith <griffith.eric@pm.me>")
 
