@@ -1,0 +1,3 @@
+(library
+ (name coreutils)
+ (libraries core_unix unix))
