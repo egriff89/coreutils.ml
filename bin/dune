@@ -1,4 +1,4 @@
 (executables
- (names true false yes printenv uname whoami)
- (public_names true false yes printenv uname whoami)
+ (names arch true false yes printenv uname whoami)
+ (public_names arch true false yes printenv uname whoami)
  (libraries coreutils clap core_unix))
