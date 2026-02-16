@@ -1,8 +1,9 @@
-let get_kernel_name = Core_unix.uname () |> Core_unix.Utsname.sysname
-let get_nodename = Core_unix.uname () |> Core_unix.Utsname.nodename
-let get_kernel_release = Core_unix.uname () |> Core_unix.Utsname.release
-let get_kernel_version = Core_unix.uname () |> Core_unix.Utsname.version
-let get_machine = Core_unix.uname () |> Core_unix.Utsname.machine
+let uname = Core_unix.uname ()
+let get_kernel_name = Core_unix.Utsname.sysname uname
+let get_nodename = Core_unix.Utsname.nodename uname
+let get_kernel_release = Core_unix.Utsname.release uname
+let get_kernel_version = Core_unix.Utsname.version uname
+let get_machine = Core_unix.Utsname.machine uname
 let get_os = if Sys.unix then "GNU/Linux" else get_kernel_name
 
 let get_all =
